@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        body{
+            background-color: rgb(15,15,15);
+        }
+        #game{
+            display: block;
+            margin: 0 auto;
+        }
+        .btn{
+            text-align: center;
+            padding-bottom: 16px;
+        }
+        .btn label{
+            text-align: center;
+            color: white;
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+    </style>
+    <title>Minesweeper</title>
+</head>
+<body>
+    <div class="img" hidden>
+        <img src="textures/closed.png"></a>
+        <img src="textures/open.png"></a>
+        <img src="textures/1.png"></a>
+        <img src="textures/2.png"></a>
+        <img src="textures/3.png"></a>
+        <img src="textures/4.png"></a>
+        <img src="textures/5.png"></a>
+        <img src="textures/6.png"></a>
+        <img src="textures/7.png"></a>
+        <img src="textures/8.png"></a>
+        <img src="textures/flag.png"></a>
+        <img src="textures/cursor.png"></a>
+        <img src="textures/mine.png"></a>
+        <img src="textures/mineWrong.png"></a>
+
+    </div>
+    <div class="main">
+        <div class="btn">
+            <label id="left">剩余雷数: 00</label>
+            <button onclick="Beg()" >初级</button>
+            <button onclick="Int()">中级</button>
+            <button onclick="Exp()">高级</button>
+            <label id="time">计时: 000.000</label>
+        </div>
+        <canvas id="game"></canvas>
+    </div>
+    <script src="js/game.js"></script>
+</body>
+</html>
