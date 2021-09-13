@@ -1,1 +1,0 @@
-# shiomiyarinne.github.io
